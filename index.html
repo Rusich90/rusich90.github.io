@@ -1,61 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Event Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Магазин</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Annual Tech Conference 2025</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Video</a></li>
-                <li><a href="#schedule">Audio</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-            </ul>
-        </nav>
+
+    <header class="header">
+        <h1 class="header__title">Магазин</h1>
+        <a href="cart.html" class="button button--cart">🛒 Корзина (<span id="cart-count">0</span>)</a>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to the Future</h2>
-        <button class="register-btn" id="open-modal">Register Now</button>
-    </section>
+    <main class="content">
+        <section class="products">
+            <div class="product-card" data-id="1">
+                <img src="images/1.jpeg" alt="Товар 1" class="product-card__image">
+                <h2 class="product-card__title">Товар 1</h2>
+                <p class="product-card__description">Описание товара 1</p>
+                <button class="button button--primary product-card__button">Добавить в корзину</button>
+            </div>
 
-    <section id="about">
-        <h2>Video</h2>
-        <video controls>
-            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </section>
+            <div class="product-card" data-id="2">
+                <img src="images/2.jpeg" alt="Товар 2" class="product-card__image">
+                <h2 class="product-card__title">Товар 2</h2>
+                <p class="product-card__description">Описание товара 2</p>
+                <button class="button button--primary product-card__button">Добавить в корзину</button>
+            </div>
+        </section>
+    </main>
 
-    <section id="schedule">
-        <h2>Audio</h2>
-        <audio controls>
-            <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-    </section>
-
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1515187029135-18ee286d815b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Event photo 1">
-            <img src="https://images.unsplash.com/photo-1560439514-e960a3ef5019?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Event photo 2">
-            <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=500" alt="Event photo 3">
-        </div>
-    </section>
-
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <h3>Register for the Event</h3>
-            <p>Enter your details below to secure your spot.</p>
-            <button class="close-modal" id="close-modal">Close</button>
-        </div>
-    </div>
-
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

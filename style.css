@@ -1,0 +1,86 @@
+/* Глобальные стили */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ebebeb;
+    text-align: center;
+}
+
+/* Шапка */
+.header {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Кнопки */
+.button {
+    padding: 10px 15px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1), -3px -3px 8px rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+}
+
+.button--primary {
+    background: #007aff;
+    color: white;
+}
+
+.button--primary:hover {
+    background: #005ecb;
+}
+
+.button--danger {
+    background: #ff3b30;
+    color: white;
+}
+
+.button--cart {
+    background: #34c759;
+    color: white;
+}
+
+/* Блок товаров */
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+/* Карточка товара */
+.product-card {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 1);
+    width: 180px;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card__image {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* Корзина */
+.cart__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart__clear {
+    margin-top: 20px;
+}
